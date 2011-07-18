@@ -1,4 +1,4 @@
-var defaultURL = 'mediaqueri.es'; //<---- CHANGE TO YOUR WEBSITE URL
+var defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
 
 //show loading graphic
 function showLoader(id) {
