@@ -12,14 +12,12 @@ function hideLoader(id) {
   
 //function to check load state of each frame
 function allLoaded(){
-  var notAllLoaded = false;
   $('iframe').each(function(){
     if(!$(this).data('loaded')) {
         //only need 1 of them to be not loaded to make this false;
-        notAllLoaded = true;
-        break; 
+        return false;
   });
-  return notAllLoaded;
+  return true;
 };
 
 function loadPage($frame, url) {
