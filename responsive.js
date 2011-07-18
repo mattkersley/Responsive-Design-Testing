@@ -14,7 +14,6 @@ function hideLoader(id) {
 function allLoaded(){
   var notAllLoaded = false;
   $('iframe').each(function(){
-    if(!$(this).data('loaded')){results.push(false)}
     if(!$(this).data('loaded')) {
         //only need 1 of them to be not loaded to make this false;
         notAllLoaded = true;
