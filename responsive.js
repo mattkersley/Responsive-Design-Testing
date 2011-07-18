@@ -12,8 +12,8 @@ function hideLoader(id) {
   
 //function to check load state of each frame
 function allLoaded(){
-  $('iframe').each(function(){
-    if(!$(this).data('loaded')) {
+  $('iframe').each(function(i, item){
+    if(!$(item).data('loaded')) {
         //only need 1 of them to be not loaded to make this false;
         return false;
     }
