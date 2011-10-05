@@ -14,3 +14,6 @@ http://mattkersley.com/responsive?google.com
 
 Once you've uploaded, you can navigate your website from within the iframes, and the others will update.
 This won't work for external sites however due to browser security restrictions.
+
+## https:// and file:// URL Support added
+- jayf added support for https:// and file:// URLs (9/17/2011) 

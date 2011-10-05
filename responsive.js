@@ -1,4 +1,6 @@
-var defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
+//var defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
+
+$('#url input[type=text]').val(defaultURL);
 
 //show loading graphic
 function showLoader(id) {
@@ -21,7 +23,10 @@ function allLoaded(){
 };
 
 function loadPage($frame, url) {
-  if(url.substr(0,7) != 'http://'){
+  if(	url.indexOf('http://') != 0 && 
+		url.indexOf('https://') != 0 && 
+		url.indexOf('file://') != 0 && 		
+  		url.indexOf('..') !=0) {
     url = 'http://'+url;
   }
   $('iframe').not($frame).each(function(){showLoader($(this).parent().attr('id'));})
