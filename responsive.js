@@ -21,8 +21,10 @@ function allLoaded(){
 };
 
 function loadPage($frame, url) {
-  if ( url.substr(0,7) !== 'http://' || url.substr(0,8) !== 'https://' || url.substr(0, 7) !== 'file://' ) {
-    url = 'http://'+url;
+  // If the url does not start with http, https, or file, then add http
+	if ( url.substr(0,4) !== 'http' && url.substr(0,5) !== 'https' && url.substr(0,4) !== 'file' ) {
+		// If the url somehow ended up as http:////, fix it.
+		url = ('http://'+url).replace('////', '//');
   }
   $('iframe').not($frame).each(function(){showLoader($(this).parent().attr('id'));})
   $('iframe').not($frame).data('loaded', false);
