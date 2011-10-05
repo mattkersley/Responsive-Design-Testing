@@ -21,7 +21,7 @@ function allLoaded(){
 };
 
 function loadPage($frame, url) {
-  if ( url.substr(0,7) !== 'http://' || url.substr(0,8) !== 'https://' ) {
+  if ( url.substr(0,7) !== 'http://' || url.substr(0,8) !== 'https://' || url.substr(0, 7) !== 'file://' ) {
     url = 'http://'+url;
   }
   $('iframe').not($frame).each(function(){showLoader($(this).parent().attr('id'));})
