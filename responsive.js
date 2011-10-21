@@ -1,7 +1,5 @@
 //var defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
 
-$('#url input[type=text]').val(defaultURL);
-
 //show loading graphic
 function showLoader(id) {
   $('#' + id + ' img').fadeIn('slow');
@@ -40,9 +38,10 @@ $('.frame').each(function(){showLoader($(this).attr('id'))});
 //when document loads
 $(document).ready(function(){
   
-  loadPage('', defaultURL);
-  
-  //query string
+   loadPage('', defaultURL);
+	 $('#url input[type=text]').val(defaultURL); 
+ 
+ //query string
   var qsArray = window.location.href.split('?');
   var qs = qsArray[qsArray.length-1];
   
