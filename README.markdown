@@ -8,7 +8,7 @@ http://mattkersley.com/responsive?google.com
 
 ## Installing on your own server
 - Copy index.html and responsive.js onto your machine
-- Update the *deafultURL* at the top of responsive.js to your own website
+- Update the *defaultURL* at the top of responsive.js to your own website
 -	Upload the files into a subdirectory on your server
 - Navigate to the new subdirectory via a browser
 
