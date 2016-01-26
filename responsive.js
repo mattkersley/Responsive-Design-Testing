@@ -1,4 +1,4 @@
-var defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
+var defaultURL = 'mattkersley.com/responsive/responsive_iframe.html'; //<---- CHANGE TO YOUR WEBSITE URL
 
 //show loading graphic
 function showLoader(id) {
@@ -13,7 +13,7 @@ function hideLoader(id) {
 //function to check load state of each frame
 function allLoaded(){
   var results = [];
-  $('iframe').each(function(){
+  $('#frames iframe').each(function(){
     if(!$(this).data('loaded')){results.push(false)}
   });
   var result = (results.length > 0) ? false : true;
@@ -21,15 +21,15 @@ function allLoaded(){
 };
 
 function loadPage($frame, url) {
-  if ( url.substr(0,7) !== 'http://' && url.substr(0,8) !== 'https://' && url.substr(0, 7) !== 'file://' ) {
+  if(url.substr(0,7) != 'http://'){
     url = 'http://'+url;
   }
-  $('iframe').not($frame).each(function(){showLoader($(this).parent().attr('id'));})
-  $('iframe').not($frame).data('loaded', false);
-  $('iframe').not($frame).attr('src', url);
+  $('#frames iframe').not($frame).each(function(){showLoader($(this).parent().attr('id'));})
+  $('#frames iframe').not($frame).data('loaded', false);
+  $('#frames iframe').not($frame).attr('src', url);
 }
 
-$('.frame').each(function(){showLoader($(this).attr('id'))});
+$('#frames .frame').each(function(){showLoader($(this).attr('id'))});
 
 
 //when document loads
@@ -49,7 +49,7 @@ $(document).ready(function(){
   //set slidable div width
   $('#frames #inner').css('width', function(){
     var width = 0;
-    $('.frame').each(function(){width += $(this).outerWidth() + 20});
+    $('#frames .frame').each(function(){width += $(this).outerWidth() + 20});
     return width;
   });
 
@@ -65,21 +65,6 @@ $(document).ready(function(){
     }
   });
 
-  //add event handlers for scrollbars checkbox
-  $('input[type=checkbox]').change(function(){
-    var scrollBarWidth = 15;
-    $frames = $('#frames');
-    $inputs = $('#scrollbar:checked');
-
-    if( $inputs.length == 0 ){
-      scrollBarWidth = -15;
-    }
-
-    $frames.find('iframe').each(function(i,el) {
-      $(el).attr('width', parseInt($(el).attr('width')) + scrollBarWidth);
-    });
-  });
-
   //when the url textbox is used
   $('form').submit(function(){
     loadPage('' , $('#url input[type=text]').val());
@@ -87,7 +72,7 @@ $(document).ready(function(){
   });
 
   //when frame loads
-  $('iframe').load(function(){
+  $('#frames iframe').load(function(){
 
     var $this = $(this);
     var url = '';

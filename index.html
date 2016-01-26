@@ -6,7 +6,7 @@
 	<title>Responsive Design Testing</title>
 	<style>
 		*{vertical-align:top;}
-		body{padding:20px;font-family:sans-serif;overflow-y:scroll;}
+		body{padding:10px 20px 20px;font-family:sans-serif;overflow-y:scroll;}
 		h2{margin:0 0 20px 0;}
 		span.small{font-size:60%;vertical-align:middle;}
 		#url{margin:0 0 20px 0px;display:block;}
@@ -18,53 +18,88 @@
 		.frame{margin-right:20px;float:left;}
 		.frame:last-child{margin-right:0;}
 		.frame img{display:none;vertical-align:middle;}
-		iframe{border:solid 1px #000;}
+		#frames iframe{border:solid 1px #000;}
 		.widthOnly {height:580px;}
 		.widthOnly h2 span{display:none;}
 		.widthOnly iframe{height:500px;}
 	</style>
 </head>
 <body id="container">
+	<div style="padding-bottom:10px;">
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-0795450330487792";
+		/* Responsive Web Design Testing */
+		google_ad_slot = "8958542805";
+		google_ad_width = 728;
+		google_ad_height = 15;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
 	<div id="url">
 		<form method="post">
 			<input type="text" placeholder="Test your own site... type the url and hit enter" />
 			<input type="submit" value="submit">
 			<div id="options">
 				<label for="normal"><input id="normal" type="radio" name="option" value="1" checked>Width only</label><br />
-        <label for="accurate"><input id="accurate" type="radio" name="option" value="2">Device sizes</label><br />
-				<label for="scrollbar"><input id="scrollbar" type="checkbox" name="scrollbar" value="1" checked>Visible Scrollbars</label>
+				<label for="accurate"><input id="accurate" type="radio" name="option" value="2">Device sizes</label>
 			</div>
 		</form>
 	</div>
 	<div id="frames" class="widthOnly">
 		<div id="inner">
 			<div id="f1" class="frame">
-				<h2>240<span> x 320</span> <span class="small">(small phone)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
+				<h2>240<span> x 320</span> <span class="small">(small phone)</span> <img src="https://mattkersley.com/responsive/loader_large.gif" /></h2>
 				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="255" height="320"></iframe>
 			</div>
 			<div id="f2" class="frame">
-				<h2>320<span> x 480</span> <span class="small">(iPhone)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
+				<h2>320<span> x 480</span> <span class="small">(iPhone)</span> <img src="https://mattkersley.com/responsive/loader_large.gif" /></h2>
 				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="335" height="480"></iframe>
 			</div>
 			<div id="f3" class="frame">
-				<h2>480<span> x 640</span> <span class="small">(small tablet)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
+				<h2>480<span> x 640</span> <span class="small">(small tablet)</span> <img src="https://mattkersley.com/responsive/loader_large.gif" /></h2>
 				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="495" height="640"></iframe>
 			</div>
 			<div id="f4" class="frame">
-				<h2>768<span> x 1024</span> <span class="small">(iPad - Portrait)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
+				<h2>768<span> x 1024</span> <span class="small">(iPad - Portrait)</span> <img src="https://mattkersley.com/responsive/loader_large.gif" /></h2>
 				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="783" height="1024"></iframe>
 			</div>
 			<div id="f5" class="frame">
-				<h2>1024<span> x 768</span> <span class="small">(iPad - Landscape)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
+				<h2>1024<span> x 768</span> <span class="small">(iPad - Landscape)</span> <img src="https://mattkersley.com/responsive/loader_large.gif" /></h2>
 				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="1039" height="768"></iframe>
 			</div>
 		</div>
 	</div>
+	<div>
+		<h2>Responsive Web Design Testing Tool</h2>
+		<p>This tool has been built to help with testing your responsive websites while you design and build them.</p>
+		<p>You can enter your website's URL into the address bar at the top of this page (not your browser's address bar) to test a specific page.</p>
+		<p>
+			Unfortunately, with the way browser security works, you are unable to navigate your site through the frames that your website appears in.<br/>
+			The only way this is possible is if you host the testing tool on your website's own hosting.<br>
+			I have provided a github repository for you to download and install the tool on your own site.
+		</p>
+		<p>Have fun.</p>
+
+	</div>
+	<div>
 	<span>A tool by <a href="http://mattkersley.com">Matt Kersley</a> - <a href="https://github.com/mattkersley/Responsive-Design-Testing">Fork it on Github</a></span><br />
 	<span>Note: The content width may not be pixel perfect - I have added 15px to the iframes to cater for the scrollbars</span>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 	<script src="responsive.js"></script>
-
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.1.1 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-3503522-5']);
+	_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
 </body>
 </html>
