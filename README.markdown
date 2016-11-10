@@ -1,4 +1,4 @@
-# Responsive Design Testing
+# esponsive Design Testing
 This tool is for everyone who needs a quick and easy way to test their website design in multiple screen widths.
 
 ## Permalink style testing
