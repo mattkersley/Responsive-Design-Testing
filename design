@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="css\style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<title>Untitled Document</title>
+
+
+  <style>
+	
+		#banner {
+			float:left;
+	margin:auto;
+	width:750px;
+	height:720px;
+	margin-top:20px;
+	margin-left:10px;
+			position: relative;
+		}
+	
+		#banner div {
+			position: absolute;
+		}
+		
+		#banner div:nth-child(2) {
+			-webkit-animation: wipe 6s infinite;
+			-webkit-animation-delay: 3s;
+			-webkit-animation-direction: alternate;
+			-webkit-mask-size: 2000px 2000px;
+			-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, 
+					color-stop(0.00,  rgba(0,0,0,1)),
+					color-stop(0.45,  rgba(0,0,0,1)),
+					color-stop(0.50,  rgba(0,0,0,0)),
+					color-stop(0.55,  rgba(0,0,0,0)),
+					color-stop(1.00,  rgba(0,0,0,0)));
+		}
+		
+		@-webkit-keyframes wipe {
+			0% {
+				-webkit-mask-position: 0 0;
+			}
+			100% {
+				-webkit-mask-position: -1200px -1200px;
+			}
+		}
+		@keyframes wipe {
+			0% {
+				-webkit-mask-position: 0 0;
+			}
+			100% {
+				-webkit-mask-position: -1200px -1200px;
+			}
+		}
+		
+		
+	</style>
+
+
+
+</head>
+
+<body>
+<div id="wrap">
+<div id="main">
+<div id="logo">
+</div>
+<div id="facebook"><a href="#">
+<img src="images/instagram.png" style="margin-top:88px; margin-left:428px; text-decoration:none;" /></a>&nbsp;&nbsp;
+<a href="#">
+<img src="images/facebook.png" style="margin-bottom:5px; text-decoration:none;" /></a>&nbsp;
+<a href="#">
+<img src="images/twitter.png" style="margin-bottom:3px; text-decoration:none;"/></a>
+<a href="#">
+<img src="images/tary.png" style="margin-bottom:5px; text-decoration:none;"/></a>
+</div>
+<div id="menu_bar">
+<div id="sub-menu-bar"><a href="#">
+<img src="images/ammo.png" style="margin-top:12px;" width="61" height="9">
+</a>
+</div>
+<div id="sub-menu-bar"><a href="#">
+<img src="images/gun.png" style="margin-top:12px; margin-left:-29px;" width="90" height="10">
+</a>
+</div>
+<div id="sub-menu-bar"><a href="#">
+<img src="images/acess.png" style="margin-top:12px; margin-left:-25px;" width="110" height="9">
+</a>
+</div>
+<div id="sub-menu-bar"><a href="#">
+<img src="images/upper.png" style="margin-top:12px; margin-left:-15px;" width="88" height="8">
+</a>
+</div>
+<div id="sub-menu-bar"><a href="#">
+<img src="images/contact.png" style="margin-top:12px;" width="100" height="8">
+</a>
+</div>
+<div id="sub-menu-bar"><a href="#">
+<img src="images/tshirt.png" style="margin-top:12px;" width="86" height="8">
+</a>
+</div>
+<div id="sub-menu-bar"><a href="#">
+<img src="images/view1.png" style="margin-top:12px;" width="100" height="9">
+</a>
+</div>
+</div>
+<div id="content">
+<div id="content1">
+<div style="margin-left:-110px; background:url(images/white%20search%20bar.png) no-repeat; margin-top:30px; width:246px; height:44px;" />
+<input type="text"  style="margin-top:11px; margin-left:16px; " size="30" /></div>
+
+<a href="#">
+<div style="background:url(images/target%20search%20button.png) no-repeat; width:26px; height:35px; text-decoration:none; margin-top:-38px; margin-left:130px;">
+</div></a><br />
+<a href="#">
+<img src="images/word/1.png" width="65" height="15" style="margin-left:-80px;" /></a><br />
+<img src="images/word/2.png" width="42" height="13" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/3.png" width="41" height="10" style="margin-left:-80px;  margin-top:6px;" /><br />
+<img src="images/word/4.png" width="149" height="13" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/5.png" width="85" height="13" style="margin-left:-80px; margin-top:6px;" /><br /><br />
+
+<a href="#">
+<img src="images/word/6.png" width="85" height="11" style="margin-left:-80px; margin-top:6px;" /></a><br />
+<img src="images/word/7.png" width="48" height="9" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/8.png" width="48" height="9" style="margin-left:-80px; margin-top:6px;" /><br /><br />
+
+<a href="#">
+<img src="images/word/9.png" width="99" height="9" style="margin-left:-80px; margin-top:6px;" /></a><br /><br />
+
+<a href="#">
+<img src="images/word/10.png" width="85" height="9" style="margin-left:-80px; margin-top:6px;" /></a><br />
+<img src="images/word/11.png" width="47" height="11" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/12.png" width="54" height="11" style="margin-left:-80px; margin-top:6px;" /><br /><br />
+
+<a href="#">
+<img src="images/word/13.png" width="47" height="10" style="margin-left:-80px; margin-top:6px;" /></a><br />
+<img src="images/word/14.png" width="47" height="10" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/15.png" width="92" height="12" style="margin-left:-80px; margin-top:6px;" /><br />
+
+<a href="#">
+<img src="images/word/16.png" width="106" height="16" style="margin-left:-80px; margin-top:1px;" /></a><br /><br />
+<img src="images/word/17.png" width="143" height="18" style="margin-left:-80px; margin-top:6px;" /><br />
+
+<a href="#">
+<img src="images/word/18.png" width="89" height="14" style="margin-left:-80px; margin-top:6px;" /><br /></a><br />
+<img src="images/word/19.png" width="129" height="15" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/20.png" width="40" height="11" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/21.png" width="95" height="13" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/22.png" width="97" height="15" style="margin-left:-80px; margin-top:6px;" /><br /><br />
+
+<a href="#">
+<img src="images/word/23.png" width="39" height="11" style="margin-left:-80px; margin-top:6px;" /></a><br />
+<img src="images/word/24.png" width="91" height="11" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/25.png" width="51" height="11" style="margin-left:-80px; margin-top:6px;" /><br />
+<img src="images/word/26.png" width="119" height="8" style="margin-left:-80px; margin-top:6px;" /><br />
+</div>
+<div id="banner">
+
+<div><img src="images/slide1.png" alt="Skyline 1" width="750px" height="720"></div>
+<div><img src="images/slide2.png" alt="Skyline 2"  width="750px" height="720"></div>
+
+</div>
+</div>
+</div>
+<div id="text">
+<img src="images/why 5150.png" width="400px" height="71px"/><br />
+<img src="images/text1.png" width="865px" height="95px" /><br /><br />
+<img src="images/text2.png" width="800x" height="40px" style="margin-left:12px;"/><br /><br />
+<img src="images/text3.png" width="865px" height="120px" /><br />
+</div>
+<div id="footer">
+<div id="sub-footer"><a href="#">
+<center><img src="images/about us.png" /></center></a>
+</div>
+<div id="sub-footer"><a href="#">
+<center><img src="images/our guarantee.png" style="margin-top:-14px;" /></center></a>
+</div>
+<div id="sub-footer"><a href="#">
+<center><img src="images/shiip.png" /></center></a>
+</div>
+<div id="sub-footer"><a href="#">
+<center><img src="images/retIL.png" /></center></a>
+</div>
+<div id="sub-footer"><a href="#">
+<center><img src="images/privacy.png" /></center></a>
+</div>
+<div id="sub-footer"><a href="#">
+<center><img src="images/terms.png" /></center></a>
+</div>
+</div>
+</div>
+</body>
+</html>
