@@ -1,4 +1,4 @@
-var defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
+const defaultURL = 'mattkersley.com'; //<---- CHANGE TO YOUR WEBSITE URL
 
 //show loading graphic
 function showLoader(id) {
@@ -12,11 +12,11 @@ function hideLoader(id) {
 
 //function to check load state of each frame
 function allLoaded(){
-  var results = [];
+  let results = [];
   $('iframe').each(function(){
     if(!$(this).data('loaded')){results.push(false)}
   });
-  var result = (results.length > 0) ? false : true;
+  let result = (results.length > 0) ? false : true;
   return result;
 };
 
@@ -38,8 +38,8 @@ $(document).ready(function(){
   loadPage('', defaultURL);
 
   //query string
-  var qsArray = window.location.href.split('?');
-  var qs = qsArray[qsArray.length-1];
+  const qsArray = window.location.href.split('?');
+  const qs = qsArray[qsArray.length-1];
 
   if(qs != '' && qsArray.length > 1){
     $('#url input[type=text]').val(qs);
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
   //set slidable div width
   $('#frames #inner').css('width', function(){
-    var width = 0;
+    let width = 0;
     $('.frame').each(function(){width += $(this).outerWidth() + 20});
     return width;
   });
@@ -67,7 +67,7 @@ $(document).ready(function(){
 
   //add event handlers for scrollbars checkbox
   $('input[type=checkbox]').change(function(){
-    var scrollBarWidth = 15;
+    let scrollBarWidth = 15;
     $frames = $('#frames');
     $inputs = $('#scrollbar:checked');
 
@@ -89,9 +89,9 @@ $(document).ready(function(){
   //when frame loads
   $('iframe').load(function(){
 
-    var $this = $(this);
-    var url = '';
-    var error = false;
+    let $this = $(this);
+    let url = '';
+    let error = false;
 
     try{
       url = $this.contents().get(0).location.href;
