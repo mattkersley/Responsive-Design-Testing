@@ -1,5 +1,5 @@
 # Responsive Design Testing
-This tool is for everyone who needs a quick and easy way to test their website design in multiple screen widths.
+This tool is for everyone who needs a quick and easy way to test their website design in multiple screen widths may it be size of a mobile phone a tablet or a full size laptop.
 
 ## Permalink style testing
 You can test any website, and provide the link to anyone you like by adding their URL to the end of the testing page address.
